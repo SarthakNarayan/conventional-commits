@@ -10,7 +10,8 @@
 
 - Use imperative mood for the description:
   - The imperative mood is a grammatical mood that forms a command, or request.
-  - For example instead of "Added feature to add todos" use "Add feature to add todos".
+  - For example instead of "Added feature to add todos" use "add feature to add todos".
+  - Use smallcase for the summary.
 
 ### Different types in conventional commits
 
@@ -43,6 +44,23 @@
 ## References
 
 - [Official documentation](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+- [Commitlint](https://commitlint.js.org/#/guides-local-setup)
+
+## Installing tools
+
+### commitlint
+
+```bash
+npm init -y
+npm install --save-dev @commitlint/{cli,config-conventional}
+echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
+```
+
+Create a commitlint script in `package.json`
+
+```bash
+echo "hello world" | npm run commitlint
+```
 
 ## To test
 
@@ -50,3 +68,4 @@
   - Like can I have multiple wips while developing the code and then a single pull request?
 - If I have developed multiple features then should I split them into separate commits before pushing them?
 - Check commitlint and commitzen
+- Check release it
