@@ -62,6 +62,15 @@ Create a commitlint script in `package.json`
 echo "hello world" | npm run commitlint
 ```
 
+- It is mostly used by CI tools and precommit hooks
+
+### Commitizen
+
+```bash
+sudo npm install commitizen -g
+commitizen init cz-conventional-changelog --save-dev --save-exact
+```
+
 ## To test
 
 - How does it behave when using pull requests.
