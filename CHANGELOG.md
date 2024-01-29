@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/SarthakNarayan/conventional-commits/compare/v2.2.1...v2.3.0) (2024-01-29)
+
+
+### ✨ Features
+
+* **b:** add feature b ([30a1e5a](https://github.com/SarthakNarayan/conventional-commits/commit/30a1e5af88bd38adb380acf94cd17396cf0a0a6a))
+
 ### [2.2.1](https://github.com/SarthakNarayan/conventional-commits/compare/v1.1.0...v2.2.1) (2024-01-29)
 
 
