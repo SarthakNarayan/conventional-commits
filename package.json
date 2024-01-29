@@ -1,0 +1,24 @@
+{
+  "name": "conventional-commits",
+  "version": "1.0.0",
+  "description": "``` <type>[optional scope]: <description>",
+  "main": "index.js",
+  "scripts": {
+    "commitlint": "commitlint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarthakNarayan/conventional-commits.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarthakNarayan/conventional-commits/issues"
+  },
+  "homepage": "https://github.com/SarthakNarayan/conventional-commits#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0"
+  }
+}
