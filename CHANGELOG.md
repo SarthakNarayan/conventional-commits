@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/SarthakNarayan/conventional-commits/compare/v1.1.0...v2.2.1) (2024-01-29)
+
+
+### 🐛 Bug Fixes
+
+* **a:** fix abstraction bug ([8406c4a](https://github.com/SarthakNarayan/conventional-commits/commit/8406c4af33287f2f58a5c7814f3567575f65d8f3))
+
 ## [1.1.0](https://github.com/SarthakNarayan/conventional-commits/compare/v1.0.0...v1.1.0) (2024-01-29)
 
 
