@@ -45,6 +45,8 @@
 
 - [Official documentation](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 - [Commitlint](https://commitlint.js.org/#/guides-local-setup)
+- [Commitizen](https://www.npmjs.com/package/commitizen#making-your-repo-commitizen-friendly)
+- https://davipon.hashnode.dev/add-commitlint-commitizen-standard-version-and-husky-to-sveltekit-project#heading-commitizenhttpsgithubcomcommitizencz-cli
 
 ## Installing tools
 
@@ -71,10 +73,21 @@ sudo npm install commitizen -g
 commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
-## To test
+### Standard version
 
-- How does it behave when using pull requests.
-  - Like can I have multiple wips while developing the code and then a single pull request?
+```bash
+npm install -D standard-version
+```
+
+Add a script to `package.json` for running standard-version.
+
+```bash
+npm run release -- --first-release # for first release
+npm run release # subsequent releases
+npm run release -- --no-verify # prevent git hooks being run at the commit step
+```
+
+## Q/A
+
 - If I have developed multiple features then should I split them into separate commits before pushing them?
-- Check commitlint and commitzen
-- Check release it
+  - Yes. So suppose you have made any documentation releated changes to readme and some code related changes then they should be different commits.
