@@ -37,10 +37,6 @@
 - A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
 - A scope MUST consist of a noun describing a section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
 
-## Miscellaneous
-
-- You can use Vscode plugins to generate conventional commits.
-
 ## References
 
 - [Official documentation](https://www.conventionalcommits.org/en/v1.0.0/#summary)
@@ -87,7 +83,11 @@ npm run release # subsequent releases
 npm run release -- --no-verify # prevent git hooks being run at the commit step
 ```
 
-## Q/A
+## Miscellaneous
 
+- You can use Vscode plugins to generate conventional commits.
 - If I have developed multiple features then should I split them into separate commits before pushing them?
   - Yes. So suppose you have made any documentation releated changes to readme and some code related changes then they should be different commits.
+- If you use branches to develop features then:
+  - If you plan to squash the commits then ensure that the squashed commit has a meaningful summary that follows the conventional commits pattern. This means while developing in a branch commit messages need not follow conventional commits pattern.
+  - If you just merge the commits as is then ensure that all the commits follow the conventional commits pattern.
